@@ -1,15 +1,19 @@
 {
   "name": "programs",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "app.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "ejs": "^3.1.10",
     "express": "^4.21.2",
     "lodash": "^4.17.21",

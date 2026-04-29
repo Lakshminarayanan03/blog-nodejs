@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "app.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/styles.css", "dest": "/public/styles.css" },
+    { "src": "/delete.png", "dest": "/public/delete.png" },
+    { "src": "/icons8-delete.svg", "dest": "/public/icons8-delete.svg" },
+    { "src": "/(.*)", "dest": "/app.js" }
+  ]
+}
